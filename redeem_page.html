@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>REDEEM YOUR 500 POINTS.</p>
+
+<button id="myBtn" value=200 onclick="myFunction()">Tshirt_200</button>
+<button id="myBtn1" value=300 onclick="myFunction1()">earphone_300</button>
+<button id="myBtn2" value=500 onclick="myFunction2()">Glass_500</button>
+
+<p>remaining point is</p>
+<p id="demo"></p>
+
+<script>
+    var x=500;
+function myFunction() {
+    if(x>0){
+  x = x-document.getElementById("myBtn").value;
+  document.getElementById("demo").innerHTML = x;
+}
+else{
+    document.getElementById("demo").innerHTML = "not enough points";
+}
+}
+function myFunction1() {
+    if(x>0){
+  x = x-document.getElementById("myBtn1").value;
+  document.getElementById("demo").innerHTML = x;
+}
+else{
+    document.getElementById("demo").innerHTML = "not enough points";
+}
+}
+function myFunction2() {
+    if(x>0){
+    x = x-document.getElementById("myBtn2").value;
+  document.getElementById("demo").innerHTML = x;
+}
+else{
+    document.getElementById("demo").innerHTML = "not enough points";
+}
+}
+</script>
+
+</body>
+</html>
